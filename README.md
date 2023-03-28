@@ -17,7 +17,7 @@ Follow [this guide](https://firebase.google.com/docs/android/setup)
 2. Add gopush library dependency to your application build.gradle:
 
 ```groovy
-implementation files('libs/gopush.aar')
+implementation 'com.iwinback:gopush:1.0.0'
 ```
 
 
