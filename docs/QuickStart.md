@@ -75,6 +75,8 @@ Add custom `FirebaseMessagingService` and register it in the AndroidManifest.xml
 class YourMessagingService : FirebaseMessagingService() {
     override fun onMessageReceived(message: RemoteMessage) {
         super.onMessageReceived(message)
+
+        GoPush.handlePushNotificationReceived(this, message)
     }
 
     override fun onNewToken(token: String) {
